@@ -6,7 +6,7 @@
 }
 
 :root {
-  --color-first: #100101;
+  --color-first: #192b4d;
   --color-second: #074EDC;
   --color-black: #000000;
   --color-gray-0: #f8f9fa;
@@ -26,4 +26,11 @@ body {
   font-size: 1.1rem;
   color: var(--color-white);
   transition: all 0.3s ease-in-out;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
 }/*# sourceMappingURL=styles.css.map */
