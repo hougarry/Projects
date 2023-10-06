@@ -5,6 +5,25 @@
   list-style: none;
 }
 
+:root {
+  --color-first: #100101;
+  --color-second: #074EDC;
+  --color-black: #000000;
+  --color-gray-0: #f8f9fa;
+  --color-gray-1: #dbdbdb;
+  --color-gray-2: #a7a7a7;
+  --color-gray-3: #8a8a8a;
+  --color-gray-4: #6d6d6d;
+  --color-gray-5: #4f4f4f;
+  --color-gray-6: #3a3a3a;
+  --color-white: #ffffff;
+  --br-sm-2: 16px;
+}
+
 body {
-  background-color: red;
+  background-color: var(--color-first);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  color: var(--color-white);
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=styles.css.map */
