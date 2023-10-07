@@ -74,3 +74,35 @@ I add wrong ; behind scaleY(1)
         }
     }
 ```
+
+#### Mistake: wrong active setting
+@keyframes part not put in .active
+
+
+```
+```
+.active {
+    display: block;
+    animation: appear 1s ease-in-out;
+    transform: translateY(0) scaleY(1);
+  }
+  @keyframes appear {
+    0% {
+      transform: translateY(-100%) scaleY(0);
+    }
+    100% {
+      transform: translateY(0) scaleY(1);
+    }
+  }
+```
+
+#### Mistake :
+I forget to add ponter-events: none; to .control
+```
+        i{
+            font-size: 1.5rem;
+            color: var(--color-gray-1);
+            pointer-events: none;
+            
+        }
+```
