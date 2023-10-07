@@ -57,3 +57,20 @@ function PageTransitions(){
         })
     }
 ```
+
+#### Generate clip path
+https://bennettfeely.com/clippy/, open this, and copy path to styles.
+
+#### Mistake: add wrong ;
+
+I add wrong ; behind scaleY(1)
+```
+    @keyframes sclaleAnim{
+        0%{
+            transform: translateY(-100%) scaleY(0)
+        }
+        100%{
+            transform: translateY(-100%) scaleY(1)
+        }
+    }
+```
