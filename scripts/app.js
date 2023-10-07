@@ -18,7 +18,7 @@ function PageTransitions(){
         })
     }
 
-    //Sections Active
+    //Sections Active-event delegation(e)
     allSections.addEventListener('click', (e) => {
         const id = e.target.dataset.id;
         if(id){
