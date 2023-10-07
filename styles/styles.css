@@ -18,12 +18,13 @@
   --color-gray-6: #3a3a3a;
   --color-white: #ffffff;
   --br-sm-2: 16px;
+  --box-shadow-1: 0 0 10px rgba(0,0,0,0.3);
 }
 
 body {
   background-color: var(--color-first);
   font-family: "Roboto", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--color-white);
   transition: all 0.3s ease-in-out;
 }
@@ -33,4 +34,81 @@ a {
   text-decoration: none;
   color: inherit;
   font-size: inherit;
+}
+
+header {
+  min-height: 100vh;
+  color: var(--color-white);
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 4rem 19rem;
+}
+
+.container {
+  transform: translateY(-100%) scale(0);
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-first);
+}
+
+.sec1 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec2 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec3 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec4 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec5 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+/* controls */
+.controls {
+  position: fixed;
+  z-index: 12;
+  top: 50%;
+  right: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+.controls .control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  cursor: pointer;
+  background-color: var(--color-gray-2);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0.5rem 0;
+  box-shadow: var(--box-shadow-1);
+}
+.controls .control i {
+  font-size: 1.5rem;
+  color: var(--color-gray-3);
 }/*# sourceMappingURL=styles.css.map */
