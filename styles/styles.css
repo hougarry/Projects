@@ -91,7 +91,7 @@ section {
 
 .active {
   display: block;
-  animation: sclaleAnim 0.5s ease-in-out;
+  animation: sclaleAnim 1s ease-in-out;
 }
 @keyframes sclaleAnim {
   0% {
@@ -137,4 +137,10 @@ section {
 }
 .controls .active-btn i {
   color: var(--color-white) !important;
+}
+
+/* Header-content */
+.header-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }/*# sourceMappingURL=styles.css.map */
