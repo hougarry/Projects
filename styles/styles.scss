@@ -80,13 +80,13 @@ section{
 }
 .active-btn{
     display: block;
-    animation: sclaleAnim 0.3s ease-in-out;
+    animation: sclaleAnim .5s ease-in-out;
     @keyframes sclaleAnim{
         0%{
-            transform: translateY(-100%) scale(0);
+            transform: translateY(-100%) scaleY(0);
         }
         100%{
-            transform: translateY(-100%) scale(1);
+            transform: translateY(-100%) scaleY(1);
         }
     }
 }
