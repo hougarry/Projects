@@ -61,26 +61,43 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgba(30, 242, 242, 0.882);
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgba(64, 15, 161, 0.882);
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgba(230, 18, 226, 0.882);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgba(230, 18, 18, 0.882);
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
+}
+
+.active-btn {
+  display: block;
+  animation: sclaleAnim 0.3s ease-in-out;
+}
+@keyframes sclaleAnim {
+  0% {
+    transform: translateY(-100%) scale(0);
+  }
+  100% {
+    transform: translateY(-100%) scale(1);
+  }
 }
 
 /* controls */
