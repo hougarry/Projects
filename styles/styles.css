@@ -101,7 +101,7 @@ section {
   justify-content: center;
   padding: 1.2rem;
   cursor: pointer;
-  background-color: var(--color-gray-2);
+  background-color: var(--color-gray-4);
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -110,5 +110,5 @@ section {
 }
 .controls .control i {
   font-size: 1.5rem;
-  color: var(--color-gray-3);
+  color: var(--color-gray-2);
 }/*# sourceMappingURL=styles.css.map */
