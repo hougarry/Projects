@@ -86,7 +86,7 @@ section{
 }
 .active{
     display: block;
-    animation: sclaleAnim .5s ease-in-out;
+    animation: sclaleAnim 1s ease-in-out;
     @keyframes sclaleAnim{
         0%{
             transform: translateY(-100%) scaleY(0);
@@ -134,5 +134,13 @@ section{
         }
 
     }
+
+}
+
+/* Header-content */
+
+.header-content{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
 
 }
