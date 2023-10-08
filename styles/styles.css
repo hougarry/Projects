@@ -6,15 +6,15 @@
 }
 
 :root {
-  --color-first: #191d2b;
-  --color-second: #920dd5;
+  --color-first:#1f2c38;
+  --color-second: #6a53df;
   --color-black: #000000;
   --color-gray-0: #F5F5F5; /* Lightest Gray: For background, maintaining a clean aesthetic */
   --color-gray-1: #E0E0E0; /* Light Gray: Possibly for borders or subtle shadows */
   --color-gray-2: #BDBDBD; /* Mid Gray: For secondary text or inactive elements */
   --color-gray-3: #757575; /* Dark Gray: For primary text on light backgrounds */
-  --color-gray-4: #424242; /* Darker Gray: For emphasized text or headings */
-  --color-gray-5: #212121; /* Near Black: For primary text or strong contrast */
+  --color-gray-4: #363434; /* Darker Gray: For emphasized text or headings */
+  --color-gray-5: #2a2d2d; /* Near Black: For primary text or strong contrast */
   --color-gray-6: #111111; /* Deepest Gray: Possibly for footer or header bg */
   --color-white: #FFFFFF;
   --br-sm-2: 16px;
@@ -210,9 +210,9 @@ section {
   grid-gap: 2rem;
 }
 .about-container .right-about .about-item {
-  border: 1px solid var(--color-grey-1);
-  border-radius: 5px;
-  transition: all 0.4s ease-in-out;
+  border: 1.2px solid var(--color-gray-3);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
   box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
 }
 .about-container .right-about .about-item:hover {
@@ -236,7 +236,7 @@ section {
   position: relative;
   text-transform: uppercase;
   font-size: 1.2rem;
-  color: var(--color-grey-1);
+  color: var(--color-gray-1);
   letter-spacing: 2px;
 }
 .about-container .right-about .about-item .abt-text .small-text::before {
@@ -246,19 +246,95 @@ section {
   top: 15px;
   width: 2rem;
   height: 2px;
-  background-color: var(--color-grey-5);
+  background-color: var(--color-gray-5);
 }
 .about-container .left-about {
   padding-right: 5rem;
 }
 .about-container .left-about p {
-  line-height: 2rem;
+  line-height: 1.5rem;
   padding: 1rem;
-  color: var(--color-grey-1);
+  color: var(--color-gray-1);
 }
 .about-container .left-about h4 {
   font-size: 2rem;
   text-transform: uppercase;
+}
+
+.about-stats {
+  padding-bottom: 3.5rem;
+}
+.about-stats .progress-bars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.about-stats .progress-bars .progress-bar {
+  display: flex;
+  flex-direction: column;
+}
+.about-stats .progress-bars .progress-bar .progress-title {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.about-stats .progress-bars .progress-bar .progress-con {
+  display: flex;
+  align-items: center;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress-text {
+  color: var(--color-gray-2);
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress {
+  width: 100%;
+  height: 0.5rem;
+  background-color: var(--color-gray-1);
+  margin-left: 1rem;
+  position: relative;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--color-second);
+  transition: all 0.4s ease-in-out;
+  width: 60%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .html {
+  width: 70%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .css {
+  width: 95%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .js {
+  width: 75%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .react {
+  width: 60%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .node {
+  width: 87%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .python {
+  width: 70%;
+}
+
+.stat-title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 3.5rem 0;
+  position: relative;
+}
+.stat-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 40%;
+  height: 1px;
+  background-color: var(--color-grey-4);
+  transform: translateX(-50%);
 }
 
 /* Independent components */
@@ -318,19 +394,19 @@ section {
   position: relative;
   text-transform: uppercase;
   font-size: 5rem;
-  font-weight: 750;
+  font-weight: 650;
 }
 .main-title h2 span {
   color: var(--color-second);
 }
 .main-title h2 .bg-text {
   position: absolute;
-  top: 0;
-  left: 0;
-  color: var(--color-gray-3);
+  top: 60%;
+  left: 50%;
+  color: var(--color-gray-4);
   z-index: -1;
   transition: all 0.3s ease-in-out;
   transform: translate(-50%, -50%);
-  font-weight: 700;
-  font-size: 10rem;
+  font-weight: 650;
+  font-size: 7rem;
 }/*# sourceMappingURL=styles.css.map */
