@@ -14,7 +14,15 @@ go to https://www.colorspire.com/ to select a color scheme and copy the colors t
 
 go to https://cdnjs.com/libraries/font-awesome to select font awesome icons and copy the link and paste it in the head of the html file. then copy the icons to styles.scss
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 go to fontawesome.com and copy the icons you want and paste them in the html file
+(iconscout.com is also a good website to find icons)
+
+
+go to w3schools.com to copy the code of the nav bar and paste it in the html file
+hsl colors are more easy to use than rgb colors, so I use hsl colors in the nav bar
+https://www.w3schools.com/colors/colors_hsl.asp
+
 **Rember to watch sass and run live server when you modify**
 
 ###  why use scss? 
