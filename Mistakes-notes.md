@@ -118,4 +118,11 @@ the h-shapre and image part should nest inside the left-header div , it spend me
                     <img src="img/avatar.png" alt="" class="avatar" width="200">
                 </div>
 ```
+### Mistake:
+
+I use wrong hover scale, translateY(-4px) is right, but I use (-4rem), it's huge.
+```
+            &:hover{
+                transform: translateY(-4px);
+``` 
 
