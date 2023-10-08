@@ -7,20 +7,22 @@
 }
 
 :root{
-    --color-first: #1a5da0ef;
-    --color-second: #1a2b4c;
+    --color-first: #191d2b;
+    --color-second: #920dd5;
     --color-black: #000000;
-    --color-gray-0: #f8f9fa;
-    --color-grey-1: #dbe1e1;
-    --color-grey-2: #b2bbcc;
-    --color-grey-3: #6c6666;
-    --color-grey-4: #564e56;
-    --color-grey-5: #2a2e35;
-    --color-grey-6: #12181b;
-    --color-white: #ffffff;
+    --color-gray-0: #F5F5F5;  /* Lightest Gray: For background, maintaining a clean aesthetic */
+    --color-gray-1: #E0E0E0;  /* Light Gray: Possibly for borders or subtle shadows */
+    --color-gray-2: #BDBDBD;  /* Mid Gray: For secondary text or inactive elements */
+    --color-gray-3: #757575;  /* Dark Gray: For primary text on light backgrounds */
+    --color-gray-4: #424242;  /* Darker Gray: For emphasized text or headings */
+    --color-gray-5: #212121;  /* Near Black: For primary text or strong contrast */
+    --color-gray-6: #111111;  /* Deepest Gray: Possibly for footer or header bg */
+    --color-white: #FFFFFF;  
     --br-sm-2: 16px;
-    --box-shadow-1: 0 0 10px rgba(0,0,0,0.3);
+    --box-shadow-1: 0 2px 4px rgba(0,0,0,0.1);  /* Softened shadow for a light, modern touch */
 }
+
+
 body{
     background-color: var(--color-first);
     font-family: 'Roboto', sans-serif;
@@ -190,6 +192,39 @@ section{
     }
 }
 
+/*About-content */
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    .right-about{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        .about-item{
+            border: 1px solid var(--color-grey-1);
+            border-radius: 4px;
+            transition: all .4s ease-in-out;
+            box-shadow: 1px 4px 15px rgba(0,0,0,0.3);
+            &:hover{
+                transform: translateY(-1rem);
+                cursor: default;
+                border: 1px solid var(--color-second);
+                box-shadow: 1px 4px 15px rgba(0,0,0,0.6);
+
+            }
+            .abt-text{
+                padding: 1.5rem;
+                display: flex;
+                flex-direction: column;
+            }   
+        }
+    }
+}
+
+
 /* Independent components */
 .btn-con{
     display: flex;
@@ -260,3 +295,4 @@ section{
         }   
     }
 }
+
