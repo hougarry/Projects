@@ -17,6 +17,10 @@ go to https://cdnjs.com/libraries/font-awesome to select font awesome icons and 
 go to fontawesome.com and copy the icons you want and paste them in the html file
 **Rember to watch sass and run live server when you modify**
 
+###  why use scss? 
+scss can nest the css, so it is more clear to read and write.
+
+
 ## create a app.js
 be careful with ; and , and "" and '' and ``!!!
 ```
