@@ -372,7 +372,13 @@ section{
     padding: 2rem 0;
     text-align: center;
 }
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 2.5rem;
 
+}
 
 
 /* Independent components */
