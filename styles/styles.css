@@ -389,7 +389,8 @@ section {
   color: var(--color-gray-2);
 }
 
-/*Projects object-fit use contain,it will not stretch the image*/
+/*Projects object-fit use contain,it will not stretch the image
+use cover, it will be same with hover*/
 .port-text {
   padding: 2rem 0;
   text-align: center;
@@ -400,6 +401,127 @@ section {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin-top: 2.5rem;
+}
+.projects .project-item {
+  position: relative;
+  border-radius: var(--br-sm-2);
+}
+.projects .project-item img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: var(--br-sm-2);
+}
+.projects .project-item .hover-items {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-second);
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+.projects .project-item .hover-items h3 {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+.projects .project-item .hover-items .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects .project-item .hover-items .icons .icon {
+  background-color: var(--color-first);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.projects .project-item .hover-items .icons .icon i {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin: 0 0.5rem;
+}
+.projects .project-item .hover-items .icons .icon:hover {
+  background-color: var(--color-white);
+}
+.projects .project-item .hover-items .icons .icon:hover i {
+  color: var(--color-first);
+}
+
+/* return to initial state */
+.project-item:hover .hover-items {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 2.5rem;
+}
+.blogs .blog-demo {
+  position: relative;
+  border-radius: 6px;
+  background-color: var(--color-gray-4);
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.blogs .blog-demo:hover {
+  transform: translateY(-5px);
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.32);
+  transition: all 0.3s ease-in-out;
+}
+.blogs .blog-demo:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
+}
+.blogs .blog-demo img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+}
+.blogs .blog-demo .blog-text {
+  padding: 1rem;
+  margin-top: -5px;
+  border-top: 8px solid var(--color-second);
+}
+.blogs .blog-demo .blog-text h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.blogs .blog-demo .blog-text h4:hover {
+  color: var(--color-second);
+}
+.blogs .blog-demo .blog-text p {
+  line-height: 1.5rem;
+  color: var(--color-gray-2);
+  padding-bottom: 1rem;
 }
 
 /* Independent components */
