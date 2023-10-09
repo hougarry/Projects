@@ -100,7 +100,7 @@ section {
 
 .controls {
   position: fixed;
-  z-index: 12;
+  z-index: 10;
   top: 50%;
   right: 4%;
   display: flex;
@@ -389,27 +389,10 @@ section {
   color: var(--color-gray-2);
 }
 
-/*Projects */
+/*Projects object-fit use contain,it will not stretch the image*/
 .port-text {
   padding: 2rem 0;
   text-align: center;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  margin-top: 2.5rem;
-}
-.projects .projects-item {
-  position: relative;
-}
-.projects .projects-item img {
-  width: 100%;
-  height: 350px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border-radius: var(--br-sm-2);
 }
 
 /* Independent components */
