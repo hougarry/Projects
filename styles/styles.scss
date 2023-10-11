@@ -1,3 +1,7 @@
+//rest browser default styles
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -52,9 +56,11 @@ a{
 }
 header{
     min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
     color: var(--color-white);
     overflow: hidden;
-    padding: 0 !important;
+
+
 }
 
 section{
@@ -125,8 +131,8 @@ section{
         padding: 1.2rem;
         cursor: pointer;
         background-color: var(--color-gray-3);
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         margin: .5rem 0;
         box-shadow: var(--box-shadow-1);
@@ -150,8 +156,8 @@ section{
     padding: 1rem;
     cursor: pointer;
     background-color: var(--color-gray-4);
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     justify-content: center;
     box-shadow: 0 2px var(--br-sm-2) rgba(0,0,0,0.1);
@@ -714,4 +720,8 @@ use cover, it will be same with hover*/
         }   
     }
 }
+
+
+
+@import './media';
 
