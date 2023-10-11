@@ -377,7 +377,8 @@ section {
 }
 
 .skills {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
 }
 .skills .skill-item {
@@ -386,6 +387,7 @@ section {
   padding: 5px 15px;
   text-transform: capitalize;
   margin: 0 10px 10px 0;
+  border-radius: 5px;
 }
 
 /* Time-line */
