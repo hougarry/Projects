@@ -134,3 +134,36 @@ I use wrong hover scale, translateY(-4px) is right, but I use (-4rem), it's huge
                 transform: translateY(-4px);
 ``` 
 
+#### Mistake: copy timeline cause error
+
+I should copy the timeline-item part, but I copy the timeline part, it cause error.
+```
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2010 - present</p>
+                    <h5>Web Developer<span> - Vircrosoft</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+```
+
+#### Mistake: Name error,
+
+this code shows that I 'm using two same name " projects" with two different class, it cause error.
+
+```
+<section class="section sec3 projects" id="projects">
+    ...
+    <div class="projects">
+        <div class="projects-item">
+            ...
+        </div>
+    </div>
+</section>
+
+```
