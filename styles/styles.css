@@ -524,6 +524,14 @@ use cover, it will be same with hover*/
   padding-bottom: 1rem;
 }
 
+.contact-content-con {
+  display: flex;
+  padding-top: 3rem;
+}
+.contact-content-con .left-contact {
+  flex: 2;
+}
+
 /* Independent components */
 .btn-con {
   display: flex;
