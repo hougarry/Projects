@@ -25,7 +25,7 @@
   --color-first: #ffffff; /* Light blue, a much lighter version of your dark mode primary color */
   --color-second: #8c7ae6; /* Slightly lighter shade of your dark mode secondary color */
   --color-black: #000000;
-  --color-gray0: #f8f8f8;
+  --color-gray-0: #f8f8f8;
   --color-gray-1: #7b7f82;
   --color-gray-2: #bec7ce;
   --color-gray-3: #777b7e;
@@ -374,6 +374,18 @@ section {
   height: 2px;
   background-color: var(--color-gray-5);
   transform: translateX(-50%);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills .skill-item {
+  background-color: var(--color-gray-5);
+  border: 1px solid var(--color-gray-5);
+  padding: 5px 15px;
+  text-transform: capitalize;
+  margin: 0 10px 10px 0;
 }
 
 /* Time-line */
