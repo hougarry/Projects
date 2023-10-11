@@ -22,6 +22,20 @@
     --box-shadow-1: 0 2px 4px rgba(0,0,0,0.1);  /* Softened shadow for a light, modern touch */
 }
 
+.light-mode{
+    --color-first: #ffffff;    /* Light blue, a much lighter version of your dark mode primary color */
+    --color-second: #8c7ae6;   /* Slightly lighter shade of your dark mode secondary color */
+    --color-black: #000000;
+    --color-gray0: #f8f8f8;
+    --color-gray-1: #6c7983;
+    --color-gray-2: #6c7983;
+    --color-gray-3: #6c7983;
+    --color-gray-4: #454e56;
+    --color-gray-5: #f8f8f8;
+    --color-gray-6: #13171b;
+    --color-white: #303233;  
+}
+
 
 body{
     background-color: var(--color-first);
@@ -118,7 +132,7 @@ section{
         box-shadow: var(--box-shadow-1);
         i{
             font-size: 1.5rem;
-            color: var(--color-gray-1);
+            color: var(--color-gray-2);
             pointer-events: none;
             
         }
@@ -128,6 +142,32 @@ section{
         transition: all 0.3s ease-in-out;
         i { color: var(--color-white); }
     }
+}
+
+.theme-btn{
+    top: 5%;
+    right: 4%;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--color-gray-4);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    box-shadow: 0 2px var(--br-sm-2) rgba(0,0,0,0.1);
+    align-items: center;
+    transition: all .1s ease-in-out;
+    &:active{
+        transform: translateY(-3px);
+    }
+    display: flex;
+    position: fixed;
+    i{
+        font-size: 1.5rem;
+        color: var(--color-gray-2);
+        pointer-events: none;
+    }
+
 }
 
 /* Header-content */
@@ -203,7 +243,7 @@ section{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
         .about-item {
-            border: 1.2px solid var(--color-gray-3);
+            border: 1.2px solid var(--color-gray-5);
             border-radius: 10px;
             transition: all .3s ease-in-out;
             box-shadow: 1px 2px 15px rgba(0,0,0,.1);
@@ -278,7 +318,7 @@ section{
                 .progress{
                     width: 100%;
                     height: .5rem;
-                    background-color: var(--color-gray-1);
+                    background-color: var(--color-gray-4);
                     margin-left: 1rem;
                     position: relative;
                     span {
@@ -314,7 +354,7 @@ section{
         top: 0;
         width: 50%;
         height: 2px;
-        background-color: var(--color-grey-4);
+        background-color: var(--color-gray-5);
         transform: translateX(-50%);
     }
 }
@@ -327,7 +367,7 @@ section{
     .tl-item{
         position: relative;
         padding-left: 3rem;
-        border-left: 1px solid var(--color-gray-3);
+        border-left: 1px solid var(--color-gray-5);
         .tl-icon{
             position:absolute;
             left: -24px;
@@ -356,7 +396,7 @@ section{
             font-weight: 500;
             text-transform: uppercase;
             span{
-                color: var(--color-second);
+                color: var(--color-gray-2);
                 font-weight: 700;
                 font-size: 1.2rem;
             }
@@ -455,7 +495,7 @@ use cover, it will be same with hover*/
     .blog-demo{
         position: relative;
         border-radius: 6px;
-        background-color: var(--color-gray-4);
+        background-color: var(--color-gray-5);
         box-shadow: 1px 2px 15px rgba(0,0,0,.1);
         transition: all .3s ease-in-out;
         &:hover{
@@ -506,6 +546,97 @@ use cover, it will be same with hover*/
     padding-top: 3rem;
     .left-contact{
         flex: 2;
+        h4{
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        p{
+            margin: 1rem 0;
+            line-height: 1.5rem;
+        }
+        .contact-info{
+            .contact-item{
+                display: flex;
+                align-items: center;
+                margin: 1rem 0;
+                justify-content: space-between;
+                p{
+                    margin: .5rem 0 !important;
+                    padding: 0 !important;
+                }
+                .contact-icon{
+                    display: grid;
+                    grid-template-columns: 40px 1fr;
+                    i{
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        .social-icon{
+            display: flex;
+                margin-top: 2rem;
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: var(--color-gray-5);
+                    cursor: pointer;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    margin: 0 .5rem;
+                    transition: all .3s ease-in-out;
+                    i{
+                        font-size: 1.5rem;
+                        color: var(--color-white);
+                    }
+                    &:hover{
+                        background-color: var(--color-second);
+                        i{color: var(--color-first);}
+                    }
+                    i{ display: flex;
+                        align-items: center;
+                        font-size: 1.5rem;
+                        justify-content: center;
+                    }
+                }
+            }
+    }
+    .right-contact{
+        flex: 3;
+        margin-left: 3rem;
+        .input-control{
+            margin: 1.5rem 0;
+            input, textarea{
+                border-radius: 25px;
+                border: none;
+                padding: 1rem 1rem;
+                font-weight: inherit;
+                font-size: inherit;
+                font-family: inherit;
+                outline: none;
+                border: none;
+                background-color: var(--color-gray-5);
+                color: var(--color-white);
+                resize: none;
+                width: 100%;
+            }
+        }
+        .input-control-line{
+            display: flex;
+            :last-child{
+                margin-left: 2rem;
+            }
+        }
+        .submit-btn{
+            display: flex;
+            justify-content: flex-start;
+        }
     }
 }
 /* Independent components */
@@ -574,7 +705,7 @@ use cover, it will be same with hover*/
             position: absolute;
             top: 60%;
             left: 50%;
-            color: var(--color-gray-4);
+            color: var(--color-gray-5);
             z-index: -1;
             transition: all .3s ease-in-out;
             transform: translate(-50%, -50%);
