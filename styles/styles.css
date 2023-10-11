@@ -52,9 +52,9 @@ a {
 
 header {
   min-height: 100vh;
+  font-family: "Roboto", sans-serif;
   color: var(--color-white);
   overflow: hidden;
-  padding: 0 !important;
 }
 
 section {
@@ -130,8 +130,8 @@ section {
   padding: 1.2rem;
   cursor: pointer;
   background-color: var(--color-gray-3);
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   margin: 0.5rem 0;
   box-shadow: var(--box-shadow-1);
@@ -155,8 +155,8 @@ section {
   padding: 1rem;
   cursor: pointer;
   background-color: var(--color-gray-4);
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   justify-content: center;
   box-shadow: 0 2px var(--br-sm-2) rgba(0, 0, 0, 0.1);
@@ -735,4 +735,58 @@ use cover, it will be same with hover*/
   transform: translate(-50%, -50%);
   font-weight: 650;
   font-size: 7rem;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+  }
+  header .right-header {
+    padding: 0 !important;
+  }
+  .theme-btn {
+    padding: 2rem !important;
+    height: 40px;
+    width: 40px;
+  }
+  .header-content {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .left-header .h-shape {
+    display: none;
+  }
+  .right-header {
+    grid-row: 1;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-header .name {
+    font-size: 2.5rem !important;
+  }
+  .header-content .left-header .image {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container .right-about {
+    padding-top: 2.5rem;
+    grid-template-columns: 1fr;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    width: 100%;
+    background-color: var(--color-gray-5);
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  .controls .control {
+    margin: 1rem 0.3rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
