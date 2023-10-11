@@ -27,9 +27,9 @@
     --color-second: #8c7ae6;   /* Slightly lighter shade of your dark mode secondary color */
     --color-black: #000000;
     --color-gray0: #f8f8f8;
-    --color-gray-1: #6c7983;
-    --color-gray-2: #6c7983;
-    --color-gray-3: #6c7983;
+    --color-gray-1: #7b7f82;
+    --color-gray-2: #bec7ce;
+    --color-gray-3: #777b7e;
     --color-gray-4: #454e56;
     --color-gray-5: #f8f8f8;
     --color-gray-6: #13171b;
@@ -124,7 +124,7 @@ section{
         justify-content: center; 
         padding: 1.2rem;
         cursor: pointer;
-        background-color: var(--color-gray-4);
+        background-color: var(--color-gray-3);
         width: 60px;
         height: 60px;
         border-radius: 50%;
@@ -579,33 +579,33 @@ use cover, it will be same with hover*/
         }
         .social-icon{
             display: flex;
-                margin-top: 2rem;
-                a{
-                    display: flex;
+            margin-top: 2rem;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--color-gray-5);
+                cursor: pointer;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                margin: 0 .5rem;
+                transition: all .3s ease-in-out;
+                i{
+                    font-size: 1.5rem;
+                    color: var(--color-white);
+                }
+                &:hover{
+                    background-color: var(--color-second);
+                    i{color: var(--color-first);}
+                }
+                i{ display: flex;
                     align-items: center;
+                    font-size: 1.5rem;
                     justify-content: center;
-                    background-color: var(--color-gray-5);
-                    cursor: pointer;
-                    height: 40px;
-                    width: 40px;
-                    border-radius: 50%;
-                    margin: 0 .5rem;
-                    transition: all .3s ease-in-out;
-                    i{
-                        font-size: 1.5rem;
-                        color: var(--color-white);
-                    }
-                    &:hover{
-                        background-color: var(--color-second);
-                        i{color: var(--color-first);}
-                    }
-                    i{ display: flex;
-                        align-items: center;
-                        font-size: 1.5rem;
-                        justify-content: center;
-                    }
                 }
             }
+        }
     }
     .right-contact{
         flex: 3;
