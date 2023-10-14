@@ -766,6 +766,7 @@ use cover, it will be same with hover*/
   font-size: 7rem;
 }
 
+/*import responsive styles*/
 .about-container .left-about p {
   padding-left: 0;
 }
