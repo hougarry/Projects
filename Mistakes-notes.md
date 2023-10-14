@@ -167,3 +167,33 @@ this code shows that I 'm using two same name " projects" with two different cla
 </section>
 
 ```
+
+#### Mistake: using wrong buttong
+
+
+
+```
+                            <div class="submit-btn">
+                                <a href="" class="main-btn">
+                                    <span class="btn-text">Submit</span>
+                                    <span class="btn-icon"><i class="fa-regular fa-paper-plane"></i></span>
+                                </a>
+                            </div>
+
+```
+
+ the issue might be related to the way the "Submit" button is implemented in my HTML. I'm using an <a> (anchor) tag, which is typically used for links, not form submission. When a user clicks on it, it behaves like a link and could navigate away based on the href attribute.
+
+
+
+
+
+ ```
+ <div class="submit-btn">
+    <button type="submit" class="main-btn">
+        <span class="btn-text">Submit</span>
+        <span class="btn-icon"><i class="fa-regular fa-paper-plane"></i></span>
+    </button>
+</div>
+
+ ```
