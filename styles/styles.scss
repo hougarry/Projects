@@ -12,7 +12,7 @@
 
 :root{
     --color-first:#1f2c38;
-    --color-second: #6a53df; 
+    --color-second: #1069dd; 
     --color-black: #000000;
     --color-gray-0: #F5F5F5;  /* Lightest Gray: For background, maintaining a clean aesthetic */
     --color-gray-1: #E0E0E0;  /* Light Gray: Possibly for borders or subtle shadows */
@@ -238,6 +238,20 @@ section{
         p {
             margin: 1.5rem 0;
             line-height: 2rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+            th, td {
+                border: 1px solid #ddd;
+                text-align: left;
+                padding: 8px;
+                font-size: smaller;
+            }
+            th {
+                background-color: var(--color-second);
+            }
         }
     }
 }
