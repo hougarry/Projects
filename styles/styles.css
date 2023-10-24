@@ -7,7 +7,7 @@
 
 :root {
   --color-first:#1f2c38;
-  --color-second: #1069dd;
+  --color-second: #2a9d8f;
   --color-black: #000000;
   --color-gray-0: #F5F5F5; /* Lightest Gray: For background, maintaining a clean aesthetic */
   --color-gray-1: #E0E0E0; /* Light Gray: Possibly for borders or subtle shadows */
@@ -23,13 +23,13 @@
 
 .light-mode {
   --color-first: #ffffff; /* Light blue, a much lighter version of your dark mode primary color */
-  --color-second: #8c7ae6; /* Slightly lighter shade of your dark mode secondary color */
+  --color-second: #2a9d8f; /* Slightly lighter shade of your dark mode secondary color */
   --color-black: #000000;
   --color-gray-0: #f8f8f8;
   --color-gray-1: #7b7f82;
   --color-gray-2: #bec7ce;
-  --color-gray-3: #777b7e;
-  --color-gray-4: #454e56;
+  --color-gray-3: #264653;
+  --color-gray-4: #e9c46a;
   --color-gray-5: #f8f8f8;
   --color-gray-6: #13171b;
   --color-white: #303233;
@@ -141,7 +141,7 @@ section {
 }
 .controls .control i {
   font-size: 1.5rem;
-  color: var(--color-gray-2);
+  color: var(--color-gray-0);
   pointer-events: none;
 }
 .controls .active-btn {
@@ -173,7 +173,7 @@ section {
 }
 .theme-btn i {
   font-size: 1.5rem;
-  color: var(--color-gray-2);
+  color: var(--color-gray-0);
   pointer-events: none;
 }
 
