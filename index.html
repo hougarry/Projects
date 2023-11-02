@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./scripts/contact.js"></script>
 </head>
 
 <body class="main-content">
@@ -101,14 +103,7 @@
                         ⛑️: Specialized in investments, financial analysis💹, programming ⌨️, and AI Prompt Engineering 🤖.
                         <br />
                         
-                        
                     </p>
-                    <div class="btn-con">
-                        <a href="" class="main-btn">
-                            <span class="btn-text">Download CV</span>
-                            <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
-                        </a>
-                    </div>
                 </div>
                 <div class="right-about">
                     <div class="about-item">
@@ -426,14 +421,14 @@
                 </div>
             </div>
         </section>
-        <section class="section sec5 contact" id="contact">
+        <section class="section sec5 contact" id="contact" >
             <div class="contact-container">
                 <div class="main-title">
                     <h2>Contact <span>Me</span><span class="bg-text">my socials</span></h2>
                 </div>
                 <div class="contact-content-con">
                     <div class="left-contact">
-                        <h4>Contact me here</h4>
+                        <h4>Contact Info</h4>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
                         </p>
@@ -444,7 +439,7 @@
                                     Location
                                 </div>
                                 <p>
-                                    : Taiyuan, China
+                                    : Nomad, China
                                 </p>
                             </div>
                             <div class="contact-item">
@@ -485,41 +480,34 @@
                             </div>  
                         </div>
                         <div class="social-icons">
-                            <div class="social-icon">
-                                <a href="https://github.com/hougarry" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
-                                <a href="https://t.me/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-                                    <a href="https://www.facebook.com" target="_blank">
-                                        <i class="fa-brands fa-facebook"></i>
-                                    </a>
-                                    <a href="#" target="_blank">
-                                        <i class="fa-brands fa-twitter"></i>
-                                    </a>
-                                    </a>
-                                    <a href="#" target="_blank">
-                                        <i class="fa-brands fa-youtube"></i>
-                            </div>
+                            <a href="https://github.com/hougarry" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://t.me/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                         </div>  
-                    </div>
+                    </div>  
                     <div class="right-contact">
-                        <form class="contact-form">
-                            <div class="input-control input-control-line">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
-                            </div>
-                            <div class="input-control">
-                                <input type="text" required placeholder="YOUR SUBJECT">
-                            </div>
-                            <div class="input-control">
-                                <textarea name="" id="" cols="20" rows="10" placeholder="YOUR MESSAGE...."></textarea>
-                            </div>
-                            <div class="submit-btn">
-                                <a href="" class="main-btn">
-                                    <span class="btn-text">Submit</span>
-                                    <span class="btn-icon"><i class="fa-regular fa-paper-plane"></i></span>
-                                </a>
-                            </div>
+                        <form id="contact-form" class="contact-form">
+                            <span class="title">Name:</span>
+                            <input type="text" id="sendername" name="sendername" placeholder="Your name" required>
+
+                            <span class="title">Email: hougarry@gmail.com</span>
+                            <input type="text" id="to" name="to" placeholder="To (hougarry@gmail.com)" required>
+                        
+                            <span class="title">Subject:</span>
+                            <input type="text" id="subject" name="subject" placeholder="Your subject" required>
+                        
+                            <span class="title">Your Email:</span>
+                            <input type="text" id="replyto" name="replyto" placeholder="Reply To (Input your Email)" required>
+                        
+                            <span class="title">Message</span>
+                            <textarea id="message" name="message" cols="20" rows="5" placeholder="After auto-reply from my google email, I will reply to you as soon as possible" required></textarea>
+                            
+                            <input type="hidden" name="contact_number">
+                            <button type="submit" class="submit-btn">Submit</button>
                         </form>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </section>
