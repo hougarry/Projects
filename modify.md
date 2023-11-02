@@ -23,7 +23,7 @@
     }
 
 }
-.input-control-line{
+form{
     display: flex;
     :last-child{
         margin-left: 2rem;
