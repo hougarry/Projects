@@ -648,11 +648,11 @@ use cover, it will be same with hover*/
   align-items: center;
   font-size: 1.5rem;
 }
-.contact-content-con .left-contact .social-icon {
+.contact-content-con .left-contact .social-icons {
   display: flex;
   margin-top: 2rem;
 }
-.contact-content-con .left-contact .social-icon a {
+.contact-content-con .left-contact .social-icons a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -664,17 +664,17 @@ use cover, it will be same with hover*/
   margin: 0 0.5rem;
   transition: all 0.3s ease-in-out;
 }
-.contact-content-con .left-contact .social-icon a i {
+.contact-content-con .left-contact .social-icons a i {
   font-size: 1.5rem;
   color: var(--color-white);
 }
-.contact-content-con .left-contact .social-icon a:hover {
+.contact-content-con .left-contact .social-icons a:hover {
   background-color: var(--color-second);
 }
-.contact-content-con .left-contact .social-icon a:hover i {
+.contact-content-con .left-contact .social-icons a:hover i {
   color: var(--color-first);
 }
-.contact-content-con .left-contact .social-icon a i {
+.contact-content-con .left-contact .social-icons a i {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
@@ -684,32 +684,66 @@ use cover, it will be same with hover*/
   flex: 3;
   margin-left: 3rem;
 }
-.contact-content-con .right-contact .input-control {
-  margin: 1.5rem 0;
-}
-.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
-  border-radius: 25px;
-  border: none;
-  padding: 1rem 1rem;
-  font-weight: inherit;
-  font-size: inherit;
-  font-family: inherit;
-  outline: none;
-  border: none;
-  background-color: var(--color-gray-5);
-  color: var(--color-white);
-  resize: none;
+.contact-content-con .right-contact .contact-form {
+  margin-top: -20px;
+  max-width: 400px;
+  margin-left: 20rem;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
   width: 100%;
+  top: 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-.contact-content-con .right-contact .input-control-line {
-  display: flex;
+.contact-content-con .right-contact .contact-form textarea {
+  resize: vertical;
+  min-height: 80px;
 }
-.contact-content-con .right-contact .input-control-line :last-child {
-  margin-left: 2rem;
+.contact-content-con .right-contact .contact-form .submit-btn {
+  padding: 8px 12px;
+  background: var(--color-first);
+  color: var(--color-white);
+  font-size: 1.2rem;
+  border: 2px solid var(--color-second);
+  cursor: pointer;
+  border-radius: 25px;
+  outline: none;
+  margin: 15px 0 0;
+  transition: all 0.3s ease-in-out;
 }
-.contact-content-con .right-contact .submit-btn {
-  display: flex;
-  justify-content: flex-start;
+.contact-content-con .right-contact .contact-form .submit-btn:hover {
+  background: var(--color-second);
+}
+.contact-content-con .right-contact .contact-form .submit-btn:active {
+  transform: scale(0.95);
+}
+.contact-content-con .right-contact .contact-form .submit-btn:focus {
+  box-shadow: 0 0 0 3px rgba(var(--color-second), 0.5);
+}
+.contact-content-con .right-contact .contact-form .title {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-white);
+}
+.contact-content-con .right-contact .contact-form input,
+.contact-content-con .right-contact .contact-form textarea {
+  padding: 8px 12px;
+  margin-bottom: 5px;
+  border: 1.5px solid var(--color-gray-1);
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+.contact-content-con .right-contact .contact-form input:focus,
+.contact-content-con .right-contact .contact-form textarea:focus {
+  border-color: var(--color-second);
+}
+.contact-content-con .right-contact .contact-form input:invalid,
+.contact-content-con .right-contact .contact-form textarea:invalid {
+  border-color: var(--color-second);
 }
 
 /* Independent components */
@@ -868,11 +902,8 @@ use cover, it will be same with hover*/
     margin-top: 3rem;
   }
 
-  .contact-content-con .right-contact .input-control-line {
+  .contact-content-con .right-contact .contact-form {
     flex-direction: column;
-  }
-
-  .contact-content-con .right-contact .input-control-line :last-child {
     margin-left: 0 !important;
     margin-top: 1rem;
   }
@@ -927,11 +958,8 @@ use cover, it will be same with hover*/
     margin-top: 3rem;
   }
 
-  .contact-content-con .right-contact .input-control-line {
+  .contact-content-con .right-contact .contact-form {
     flex-direction: column;
-  }
-
-  .contact-content-con .right-contact .input-control-line :last-child {
     margin-left: 0 !important;
     margin-top: 1rem;
   }
