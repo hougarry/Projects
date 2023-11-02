@@ -314,15 +314,18 @@ section {
 }
 .about-container .left-about {
   padding-right: 5rem;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.about-container .left-about .info-section {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.about-container .left-about .emoji {
+  margin-right: 0.5rem;
 }
 .about-container .left-about p {
-  line-height: 1.5rem;
-  padding: 1rem;
-  color: var(--color-gray-1);
-}
-.about-container .left-about h4 {
-  font-size: 2rem;
-  text-transform: uppercase;
+  margin: 0;
 }
 
 .about-stats {
