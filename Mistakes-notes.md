@@ -197,3 +197,37 @@ this code shows that I 'm using two same name " projects" with two different cla
 </div>
 
  ```
+
+
+
+
+
+ #### Mistake: wrong tag
+wrong part:
+```html
+                 <div class="social-icons">
+                        <div class="social-icon">
+                            <a href="https://github.com/hougarry" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://t.me/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>  
+```
+I use two </a> tag, it cause error. and the last one miss </a> tag. because I use ctrl+x to cut the code to adjust the location, it cause this error.
+
+                         <div class="social-icons">
+                            <a href="https://github.com/hougarry" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://t.me/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        </div>  
+
