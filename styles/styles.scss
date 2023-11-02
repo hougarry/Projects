@@ -628,7 +628,7 @@ use cover, it will be same with hover*/
                 }
             }
         }
-        .social-icon{
+        .social-icons{
             display: flex;
             margin-top: 2rem;
             a{
@@ -661,35 +661,73 @@ use cover, it will be same with hover*/
     .right-contact{
         flex: 3;
         margin-left: 3rem;
-        .input-control{
-            margin: 1.5rem 0;
-            input, textarea{
-                border-radius: 25px;
-                border: none;
-                padding: 1rem 1rem;
-                font-weight: inherit;
-                font-size: inherit;
-                font-family: inherit;
-                outline: none;
-                border: none;
-                background-color: var(--color-gray-5);
+        .contact-form {
+            margin-top: -20px;
+            max-width: 400px;
+            margin-left: 20rem;
+            margin-right: auto; 
+            display: flex;
+            flex-direction: column;
+            padding: 10px 30px;
+            width: 100%;
+            top: 0;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            textarea {
+                resize: vertical;
+                min-height: 80px;
+            }
+            .submit-btn {
+                padding: 8px 12px;
+                background: var(--color-first);
                 color: var(--color-white);
-                resize: none;
-                width: 100%;
+                font-size: 1.2rem;
+                border: 2px solid var(--color-second);
+                cursor: pointer;
+                border-radius: 25px;
+                outline: none;
+                margin: 15px 0 0;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background: var(--color-second);
+                }
+                &:active {
+                    transform: scale(0.95);
+                }
+                &:focus {
+                    box-shadow: 0 0 0 3px rgba(var(--color-second), 0.5);
+                }
+            }
+            .title {
+                margin-bottom: 5px;
+                font-size: 1rem;
+                font-weight: 500;
+                color: var(--color-white);
+            }
+            input,
+            textarea {
+                padding: 8px 12px;
+                margin-bottom: 5px;
+                border: 1.5px solid var(--color-gray-1);
+                border-radius: 5px;
+                outline: none;
+                font-size: 1rem;
+                transition: border 0.3s;
+                &:focus {
+                    border-color: var(--color-second);
+                }
+            }
+            input:invalid,
+            textarea:invalid {
+                border-color: var(--color-second);
             }
         }
-        .input-control-line{
-            display: flex;
-            :last-child{
-                margin-left: 2rem;
-            }
-        }
-        .submit-btn{
-            display: flex;
-            justify-content: flex-start;
-        }
+
     }
 }
+
+
+
 /* Independent components */
 .btn-con{
     display: flex;
