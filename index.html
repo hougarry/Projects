@@ -274,113 +274,190 @@
             <div class="main-title">
                 <h2>My <span>Projects</span><span class="bg-text">my work</span></h2>
             </div> 
-            <p class="port-text">
-                Here is some of my work that I've done in various programming languages.
-            </p>
-            <div class="projects">
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="/img/port-1.jpg" alt="" >
+            <div class="hero-tab">
+                <div class="btn-box">
+                    <button class="boxbtn1" onclick="openFullStack()"><i class="fa-brands fa-internet-explorer"></i>FullStack</button>
+                    <button class="boxbtn2" onclick="openFrontend()"><i class="fa-brands fa-html5"></i>Frontend</button>
+                    <button class="boxbtn3" onclick="openPython()"><i class="fa-brands fa-python"></i>Python</button>
+                    <button class="boxbtn4" onclick="openOthers()"><i class="fa-brands fa-codepen"></i>Others</button>
+
+                </div>
+                <div class="content" id="content1" name="cards">
+                    <div class="card" style="background-image: url('./img/port-1.jpg');">
+                        <div class="card-content">
+                            <h2 class="card-title">project1</h2>
+                            <p class="card-body">
+                                ledsaf site amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices.
+                            </p>
+                            <div class="detail-pop">
+                                <button data-detail-target="#detail" class="card-button">Signal Details You don't know</button>
+                                <div class="detail " id="detail">
+                                    <div class="detail-header">Typing Signals
+                                        <button data-close-button class="close-button">&times;</button>
+                                    </div>                                  
+                                    <div class="detail-body">
+                                        & is called an entity, pronounce as "and". It is used to display special characters in HTML.
+                                        &times; is used to display the multiplication sign.
+                                        &copy; is used to display the copyright.
+                                        &reg; is used to display the registered trademark.
+                                        &cap; is used to display the capital Greek letter Delta.
+                                        &amp; is used to display the ampersand character.
+                                        &pound; is used to display the Pound sign.
+                                        &dollar; is used to display the dollar sign.
+                            
+                                        $ is pronounced as "dollar". It is used to display the dollar sign.
+                                        * is pronounced as "asterisk". It is used to display the multiplication sign.
+                                        @ is pronounced as "at". It is used to display the at sign.
+                                        # is pronounced as "hash". It is different from the hash sign used in URLs. C# is pronounced as "C sharp".
+                                    </div>
+                                </div>
+                                <div id="overlay"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="hover-items">
-                        <h3>Code Source</h3>
-                        <div class="icons">
-                            <a  href="" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a  href="" class="icon" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            <a href="https://www.freecodecamp.org/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                    <div class="card" style="background-image: url('./img/port-2.jpg');">
+                        <div class="card-content">
+                            <h2 class="card-title">project2</h2>
+                            <p class="card-body">
+                                ledsaf site amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices.
+                            </p>
+                            <a href="#" class="card-button">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url('./img/port-2.jpg');">
+                        <div class="card-content">
+                            <h2 class="card-title">project2</h2>
+                            <p class="card-body">
+                                ledsaf site amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices.
+                            </p>
+                            <a href="#" class="card-button">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url('./img/port-2.jpg');">
+                        <div class="card-content">
+                            <h2 class="card-title">project2</h2>
+                            <p class="card-body">
+                                ledsaf site amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices.
+                            </p>
+                            <a href="#" class="card-button">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url('./img/port-2.jpg');">
+                        <div class="card-content">
+                            <h2 class="card-title">project2</h2>
+                            <p class="card-body">
+                                ledsaf site amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices.
+                            </p>
+                            <a href="#" class="card-button">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="/img/port-1.jpg" alt="" >
-                    </div>
-                    <div class="hover-items">
-                        <h3>Code Source</h3>
-                        <div class="icons">
-                            <a  href="" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a  href="" class="icon" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            <a href="https://www.freecodecamp.org/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                <div class="content" id="content2" name="photos">
+                    <div class="projects">
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="/img/port-1.jpg" alt="" >
+                            </div>
+                            <div class="hover-items">
+                                <h3>Code Source</h3>
+                                <div class="icons">
+                                    <a  href="" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    <a  href="" class="icon" target="_blank"><i class="fa-solid fa-link"></i></a>
+                                    <a href="https://www.freecodecamp.org/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="/img/port-1.jpg" alt="" >
+                            </div>
+                            <div class="hover-items">
+                                <h3>Code Source</h3>
+                                <div class="icons">
+                                    <a  href="" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    <a  href="" class="icon" target="_blank"><i class="fa-solid fa-link"></i></a>
+                                    <a href="https://www.freecodecamp.org/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="/img/port-1.jpg" alt="" >
+                            </div>
+                            <div class="hover-items">
+                                <h3>Code Source</h3>
+                                <div class="icons">
+                                    <a  href="" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    <a  href="" class="icon" target="_blank"><i class="fa-solid fa-link"></i></a>
+                                    <a href="https://www.freecodecamp.org/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="/img/port-1.jpg" alt="" >
+                            </div>
+                            <div class="hover-items">
+                                <h3>Code Source</h3>
+                                <div class="icons">
+                                    <a  href="" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    <a  href="" class="icon" target="_blank"><i class="fa-solid fa-link"></i></a>
+                                    <a href="https://www.freecodecamp.org/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="/img/port-1.jpg" alt="" >
+                            </div>
+                            <div class="hover-items">
+                                <h3>Code Source</h3>
+                                <div class="icons">
+                                    <a  href="" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    <a  href="" class="icon" target="_blank"><i class="fa-solid fa-link"></i></a>
+                                    <a href="https://www.freecodecamp.org/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="/img/port-1.jpg" alt="" >
+                <div class="content" id="content3">
+                    <div class="content-left">
+                        <h1>JAVASCRIPT</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. sdfjld 
+                            sdfsdfs sdf;lsdf sd;f;s sdfl;ksdf ;sdfl 
+                        </p>
+                        <a href="#">Watch Video</a>
                     </div>
-                    <div class="hover-items">
-                        <h3>Code Source</h3>
-                        <div class="icons">
-                            <a  href="" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a  href="" class="icon" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            <a href="https://www.freecodecamp.org/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="/img/port-1.jpg" alt="" >
-                    </div>
-                    <div class="hover-items">
-                        <h3>Code Source</h3>
-                        <div class="icons">
-                            <a  href="" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a  href="" class="icon" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            <a href="https://www.freecodecamp.org/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
-                        </div>
+                    <div class="content-right">
+                        <img src="./bg.jpg">
                     </div>
                 </div>
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="/img/port-1.jpg" alt="" >
+                <div class="content" id="content4">
+                    <div class="content-left">
+                        <h1>JAVASCRIPT</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. sdfjld 
+                            sdfsdfs sdf;lsdf sd;f;s sdfl;ksdf ;sdfl 
+                        </p>
+                        <a href="#">Watch Video</a>
                     </div>
-                    <div class="hover-items">
-                        <h3>Code Source</h3>
-                        <div class="icons">
-                            <a  href="" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a  href="" class="icon" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            <a href="https://www.freecodecamp.org/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
-                        </div>
+                    <div class="content-right">
+                        <img src="./bg.jpg">
                     </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="/img/port-1.jpg" alt="" >
-                    </div>
-                    <div class="hover-items">
-                        <h3>Code Source</h3>
-                        <div class="icons">
-                            <a  href="" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a  href="" class="icon" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            <a href="https://www.freecodecamp.org/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="/img/port-1.jpg" alt="" >
-                    </div>
-                    <div class="hover-items">
-                        <h3>Code Source</h3>
-                        <div class="icons">
-                            <a  href="" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a  href="" class="icon" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            <a href="https://www.freecodecamp.org/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
-                        </div>
-                    </div>
-                </div>
             </div>
+
+
         </section> 
         <section class="section sec4 blog" id="blog">
             <div class="blogs-content">
                 <div class="main-title">
-                    <h2>My <span>Blog</span><span class="bg-text">my articles</span></h2>
+                    <h2>My <span>Services</span><span class="bg-text">my services</span></h2>
                 </div> 
                 <div class="blogs">
                     <div class="blog-demo">
                         <img src="./img/blog/blog-1.jpg" alt="">
                         <div class="blog-text">
-                            <h4>How to create your own portfolio</h4>
+                            <h4>Finance Tutor Online</h4>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
                             </p>
@@ -528,7 +605,7 @@
             <i class="fa-solid fa-briefcase"></i>
         </div>
         <div class="control control-4 " data-id="blog">
-            <i class="fa-solid fa-blog"></i>
+            <i class="fa-solid fa-sack-dollar"></i>
         </div>
         <div class="control control-5 " data-id="contact">
             <i class="fa-solid fa-envelope"></i>
