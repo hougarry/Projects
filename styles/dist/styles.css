@@ -39,7 +39,7 @@
   --color-gray-1: #7b7f82;
   --color-gray-2: #bec7ce;
   --color-gray-3: #264653;
-  --color-gray-4: #e9c46a;
+  --color-gray-4: #FFA500;
   --color-gray-5: #f8f8f8;
   --color-gray-6: #13171b;
   --color-white: #303233;
@@ -482,11 +482,177 @@ section {
   color: var(--color-gray-2);
 }
 
-/*Projects object-fit use contain,it will not stretch the image
-use cover, it will be same with hover*/
+/*Projects part*/
 .port-text {
   padding: 2rem 0;
   text-align: center;
+}
+
+.hero-tab {
+  overflow: hidden;
+  width: 100%;
+  height: 150vh;
+  position: relative;
+  margin: 10px auto;
+}
+.hero-tab .btn-box {
+  justify-content: center;
+  display: flex;
+  border-bottom: 3px solid var(--color-second);
+}
+.hero-tab .btn-box button {
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  color: var(--color-white);
+  cursor: pointer;
+  margin-right: 20px;
+  font-weight: bold;
+}
+.hero-tab .btn-box button .fa-brands {
+  margin-right: 20px;
+}
+.hero-tab .btn-box button:hover {
+  color: var(--color-second);
+}
+.hero-tab .btn-box button:last-child {
+  margin-right: 0;
+}
+.hero-tab .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateX(150%);
+}
+.hero-tab .content .card {
+  color: var(--color-gray-0);
+  background-size: cover;
+  padding: 4rem 0 0 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+  flex: 0 1 calc(30% - 1rem);
+  max-width: calc(26% - 1rem);
+  margin: 2rem;
+}
+.hero-tab .content .card:focus-within {
+  transform: scale(1.05);
+}
+.hero-tab .content .card:focus-within .card-title::after {
+  transform: scaleX(1);
+}
+.hero-tab .content .card:hover {
+  transform: scale(1.05);
+}
+.hero-tab .content .card:hover .card-title::after {
+  transform: scaleX(1);
+}
+.hero-tab .content .card .card-content {
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(31, 19, 195, 0.3) 20%, black);
+}
+.hero-tab .content .card .card-title {
+  position: relative;
+  width: max-content;
+}
+.hero-tab .content .card .card-title::after {
+  content: "";
+  height: 4px;
+  position: absolute;
+  bottom: -3px;
+  left: calc(var(--padding) * -1);
+  width: calc(100% + var(--padding));
+  background: var(--color-second);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+.hero-tab .content .card .card-body {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.hero-tab .content .card .card-button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-white);
+  background: var(--color-second);
+  border-radius: 5px;
+  padding: 0.4rem 1.2rem;
+  transition: background-color 500ms ease;
+}
+.hero-tab .content .card .card-button:hover, .hero-tab .content .card .card-button:focus {
+  background-color: var(--color-gray-5);
+}
+.hero-tab #content1 {
+  transform: translateX(0);
+}
+.hero-tab .detail-pop .detail {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  /* 50% of the width, 50% of the height, sclale 0 to hide it */
+  transition: 200ms ease-in-out;
+  /* this is to have a smooth transition */
+  border: 2px solid;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #fff;
+  width: 500px;
+  max-width: 80%;
+}
+.hero-tab .detail-pop .detail.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.hero-tab .detail-pop .detail-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.hero-tab .detail-pop .detail-header.title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.hero-tab .detail-pop .detail-header.close-button {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  color: none;
+  outline: none;
+  border: none;
+  background-color: none;
+}
+.hero-tab .detail-pop .detail-body {
+  padding: 10px 15px;
+}
+.hero-tab .detail-pop #overlay {
+  position: fixed;
+  /* overlay is to cover the background */
+  transition: 200ms ease-in-out;
+  /* this is to have a smooth transition */
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* black with 50% opacity */
+  pointer-events: none;
+  /* this is to *not* have the overlay clickable */
+}
+.hero-tab .detail-pop #overlay.active {
+  opacity: 1;
+  pointer-events: all;
+  /* this active overlay will be clickable */
 }
 
 .projects {
@@ -562,6 +728,7 @@ use cover, it will be same with hover*/
   transform: scale(1);
 }
 
+/*end of projects*/
 .blogs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1048,5 +1215,43 @@ use cover, it will be same with hover*/
   }
   .controls .control {
     margin: 0.3rem 2rem !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+*::before,
+*::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0 !important;
+  }
+}
+@media (hover: hover) {
+  .card-content {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+
+  .card:hover .card-content,
+.card:focus-within .card-content {
+    transform: translateY(0);
+    transition-delay: 500ms;
+  }
+
+  .card:focus-within .card-content {
+    transition-delay: 0ms;
+  }
+
+  .card-content > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 500ms linear;
+  }
+
+  .card:hover .card-content > *:not(.card-title),
+.card:focus-within .card-content > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 1000ms;
   }
 }
