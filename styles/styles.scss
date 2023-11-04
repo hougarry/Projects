@@ -660,8 +660,41 @@ section{
                 }
             }
         }
+
       }
-       
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); // Lighter shadow for a sleek look
+        margin-bottom: 1rem; // Reduced margin
+        border-radius: 4px; // Less pronounced rounded corners
+      
+        th, td {
+          border: 1px solid #ddd;
+          text-align: center; // Center alignment looks better for compact tables
+          padding: 0.5rem; // Reduced padding
+          font-size: 0.9rem; // Smaller font to save space
+        }
+      
+        th {
+          background-color: var(--color-second); 
+          color: var(--color-white); 
+        }
+      
+        tr {
+          &:nth-child(odd) {
+            td {
+              background-color: var(--color-first); // Zebra striping only for TD to avoid stripe on header
+            }
+          }
+      
+          &:hover td {
+            background-color: rgba(0, 123, 255, 0.1); // Hover effect for table data cells only
+          }
+        }
+      }
+            
+   
     #content1{
         transform: translateX(0);
     }
