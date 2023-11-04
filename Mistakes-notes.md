@@ -231,3 +231,15 @@ I use two </a> tag, it cause error. and the last one miss </a> tag. because I us
                             <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                         </div>  
 
+
+
+#### Mistake: wrong path to put the image
+
+Relative Path: In your HTML code, you are using an absolute path for the image source (/img/projects/frontend/project-showcase.png). When deploying your project on GitHub Pages, try using a relative path instead. Assuming your HTML file is in the root directory of your repository, you can change the image source to "img/projects/frontend/project-showcase.png" without the leading /. This relative path should work both locally and on GitHub Pages.
+
+wrong part:
+```html
+                            <div class="project-image">
+                                <img src="/img/projects/frontend/project-showcase.png" alt="" >
+                            </div>
+```
