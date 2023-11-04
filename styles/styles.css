@@ -658,6 +658,29 @@ section {
   opacity: 1;
   pointer-events: all; /* this active overlay will be clickable */
 }
+.hero-tab table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+.hero-tab table th, .hero-tab table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+.hero-tab table th {
+  background-color: var(--color-second);
+  color: var(--color-white);
+}
+.hero-tab table tr:nth-child(odd) td {
+  background-color: var(--color-first);
+}
+.hero-tab table tr:hover td {
+  background-color: rgba(0, 123, 255, 0.1);
+}
 .hero-tab #content1 {
   transform: translateX(0);
 }
