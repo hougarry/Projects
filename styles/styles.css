@@ -521,11 +521,14 @@ section {
   transform: translateX(150%);
 }
 .hero-tab .content .card {
+  display: inline;
   color: var(--color-gray-0);
   background-size: cover;
   padding: 4rem 0 0 0;
   border-radius: 0.5rem;
   overflow: hidden;
+  width: 1200px;
+  height: 220px;
   transition: transform 500ms ease;
   flex: 0 1 calc(30% - 1rem);
   max-width: calc(26% - 1rem);
@@ -538,7 +541,7 @@ section {
   transform: scaleX(1);
 }
 .hero-tab .content .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 .hero-tab .content .card:hover .card-title::after {
   transform: scaleX(1);
@@ -552,6 +555,7 @@ section {
   position: relative;
   width: -moz-max-content;
   width: max-content;
+  font-size: 1.5rem;
 }
 .hero-tab .content .card .card-title::after {
   content: "";
@@ -583,37 +587,35 @@ section {
 .hero-tab .content .card .card-button:hover, .hero-tab .content .card .card-button:focus {
   background-color: var(--color-gray-5);
 }
-.hero-tab #content1 {
-  transform: translateX(0);
-}
-.hero-tab .detail-pop .detail {
+.hero-tab .content .detail-pop .detail {
   position: fixed;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0); /* 50% of the width, 50% of the height, sclale 0 to hide it */
-  transition: 200ms ease-in-out; /* this is to have a smooth transition */
+  left: 150%; /* initially placed to the right of the viewport */
   border: 2px solid;
   border-radius: 10px;
   z-index: 10;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 500px;
   max-width: 80%;
 }
-.hero-tab .detail-pop .detail.active {
+.hero-tab .content .detail-pop .detail.active {
+  left: 50%;
   transform: translate(-50%, -50%) scale(1);
 }
-.hero-tab .detail-pop .detail-header {
+.hero-tab .content .detail-pop .detail-header {
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
+  color: var(--color-black);
 }
-.hero-tab .detail-pop .detail-header.title {
+.hero-tab .content .detail-pop .detail-header.title {
   font-size: 20px;
   font-weight: 600;
+  color: var(--color-black);
 }
-.hero-tab .detail-pop .detail-header.close-button {
+.hero-tab .content .detail-pop .detail-header.close-button {
   cursor: pointer;
   font-size: 20px;
   font-weight: 600;
@@ -622,10 +624,26 @@ section {
   border: none;
   background-color: none;
 }
-.hero-tab .detail-pop .detail-body {
+.hero-tab .content .detail-pop .detail-body {
   padding: 10px 15px;
+  color: var(--color-black);
+  /* Style headings */
 }
-.hero-tab .detail-pop #overlay {
+.hero-tab .content .detail-pop .detail-body a {
+  text-decoration: none;
+  color: #2a9d8f;
+  font-weight: bold;
+}
+.hero-tab .content .detail-pop .detail-body a:hover {
+  text-decoration: underline;
+}
+.hero-tab .content .detail-pop .detail-body p {
+  color: #333;
+}
+.hero-tab .content .detail-pop .detail-body h3 {
+  color: #555;
+}
+.hero-tab .content .detail-pop #overlay {
   position: fixed; /* overlay is to cover the background */
   transition: 200ms ease-in-out; /* this is to have a smooth transition */
   opacity: 0;
@@ -636,9 +654,12 @@ section {
   background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
   pointer-events: none; /* this is to *not* have the overlay clickable */
 }
-.hero-tab .detail-pop #overlay.active {
+.hero-tab .content .detail-pop #overlay.active {
   opacity: 1;
   pointer-events: all; /* this active overlay will be clickable */
+}
+.hero-tab #content1 {
+  transform: translateX(0);
 }
 
 .projects {
